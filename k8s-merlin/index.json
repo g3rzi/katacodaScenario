@@ -14,6 +14,15 @@
         "text": "step2.md"
       }
     ],
+	"assets": {
+        "host01": [
+            {
+			"file": "merlin.tar", 
+			"target": "/usr/local/bin/", 
+			"chmod": "+x"
+			}
+        ]
+    },
     "intro": {
       "text": "intro.md",
 	  "courseData": "background.sh"
