@@ -17,9 +17,7 @@
     ],
     "intro": {
       "text": "intro.md",
-	  "controlplane":[
 	  "code": "background.sh"
-	  ]
     },
     "finish": {
       "text": "finish.md"
