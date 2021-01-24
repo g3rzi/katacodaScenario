@@ -25,6 +25,6 @@
     "uilayout": "terminal-terminal"
   },
   "backend": {
-    "imageid": "multinodeexampleenv-cluster"
+    "imageid": "kubernetes-cluster-1-16"
   }
 }
