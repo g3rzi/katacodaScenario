@@ -25,6 +25,6 @@
     "uilayout": "terminal-terminal"
   },
   "backend": {
-    "imageid": "kubernetes-running-cluster-1-16"
+    "imageid": "exampleenv1"
   }
 }
