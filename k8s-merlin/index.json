@@ -17,7 +17,9 @@
     ],
     "intro": {
       "text": "intro.md",
-	  "courseData": "background.sh"
+	  "host01":[
+	  "code": "background.sh"
+	  ]
     },
     "finish": {
       "text": "finish.md"
