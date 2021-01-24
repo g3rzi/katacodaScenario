@@ -16,9 +16,9 @@ install_csi_driver() {
   git clone https://github.com/kubernetes-csi/csi-driver-host-path.git /opt/csi-driver-host-path
 }
 
-install_kompose
-install_helm
-install_csi_driver
+#install_kompose
+#install_helm
+#install_csi_driver
 
 # Runtime
 cat <<EOF > /opt/configure-environment.sh
