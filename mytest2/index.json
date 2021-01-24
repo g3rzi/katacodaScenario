@@ -26,6 +26,5 @@
   },
   "backend": {
     "imageid": "golang:1.14"
-	"imageid": "kubernetes-cluster-running:1.18"
   }
 }
