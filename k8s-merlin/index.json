@@ -14,17 +14,9 @@
         "text": "step2.md"
       }
     ],
-	"assets": {
-        "controlplane": [
-            {
-			"file": "merlin.tar", 
-			"target": "/root/", 
-			"chmod": "+x"
-			}
-        ]
-    },
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+	  "courseData": "background.sh"
     },
     "finish": {
       "text": "finish.md"
