@@ -18,7 +18,7 @@
         "host01": [
             {
 			"file": "merlin.tar", 
-			"target": "/usr/local/bin/", 
+			"target": "/root/", 
 			"chmod": "+x"
 			}
         ]
