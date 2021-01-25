@@ -15,9 +15,14 @@
         "text": "step2.md"
       }
     ],
+	"assets": {
+        "controlplane": [
+            {"file": "merlin2.tar", "target": "/root", "chmod": "+x"}
+        ]
+    },
     "intro": {
       "text": "intro.md",
-	  "code": "background.sh",
+
     },
     "finish": {
       "text": "finish.md"
