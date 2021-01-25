@@ -2,9 +2,13 @@ Here we will see the basic settings of Kubessss.
 
 ## Basics of Kubessss
 
-### Server
+#### Server
 
-The server is located in the "controlplane" with a configuration file `config.yaml`.
+The server is located in the "controlplane" with a configuration file `config.yaml`.  
+The server uses this file to create a listener to a given protocol, interface and port.
+Run the file `./merlinServer-Linux-x64`{{execute}}
+
+
 Clone our example repository that contains the set of documentation with the following command:
 
 `git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
