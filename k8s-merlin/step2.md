@@ -1,7 +1,10 @@
-A Katacoda scenario is a series of Markdown files, bash scripts and a JSON file to define how your scenario should be configured, the text for the scenario and any automation required.
+Here we will see the basic settings of Kubessss.
 
-## Task
+## Basics of Kubessss
 
+### Server
+
+The server is located in the "controlplane" with a configuration file `config.yaml`.
 Clone our example repository that contains the set of documentation with the following command:
 
 `git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
