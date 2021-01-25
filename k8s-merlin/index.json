@@ -17,7 +17,7 @@
     ],
 	"assets": {
         "controlplane": [
-            {"file": "wait.txt", "target": "/root", "chmod": "+x"},
+            {"file": "wait.txt", "target": "/root", "chmod": "+x"}
         ]
     },
     "intro": {
