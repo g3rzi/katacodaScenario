@@ -15,16 +15,9 @@
         "text": "step2.md"
       }
     ],
-	"assets": {
-        "controlplane": [
-            {"file": "merlinAgent-Linux-x64", "target": "/root", "chmod": "+x"}
-        ],
-		"node01": [
-            {"file": "merlinServer-Linux-x64", "target": "/root", "chmod": "+x"}
-        ]
-    },
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+	  "code": "background.sh",
 
     },
     "finish": {

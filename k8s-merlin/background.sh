@@ -4,7 +4,9 @@ touch /root/aaaaaaaaa
 HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
 	touch /root/thisisthehost
-	wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlin.tar
-    tar -xf merlin.tar
-    cd merlin
+	wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinServerAndData.tar
+	tar -xf merlinServerAndData.tar --directory /root/merlin
+	else
+		wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64
+	    
 fi
