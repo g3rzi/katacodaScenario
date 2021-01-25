@@ -3,4 +3,7 @@ This is a Kubernetes environment with Master ("controlplane") and Worker ("node0
 Make sure both of them are ready with `kubectl get nodes`{{execute}}.
 
 If they are not, wait couple of seconds and try again.  
-If you get this error: "error: no configuration has been provided" run `launch.sh`{{execute}}.
+If you get this error: "error: no configuration has been provided" run `launch.sh`{{execute}}.  
+
+
+aaa `a=\`echo aaa\` && echo done`{{execute}}.
