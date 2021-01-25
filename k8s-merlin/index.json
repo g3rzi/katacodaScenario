@@ -17,9 +17,11 @@
     ],
 	"assets": {
         "controlplane": [
-            {"file": "merlinAgent-Linux-x64", "target": "/root", "chmod": "+x"},
-			{"file": "merlinServer-Linux-x64", "target": "/root", "chmod": "+x"}
-        ]
+            {"file": "merlinAgent-Linux-x64", "target": "/root", "chmod": "+x"}
+        ],
+		"node01": [
+            {"file": "merlinServer-Linux-x64", "target": "/root", "chmod": "+x"}
+        ],
     },
     "intro": {
       "text": "intro.md"
