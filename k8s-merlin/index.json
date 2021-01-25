@@ -15,14 +15,9 @@
         "text": "step2.md"
       }
     ],
-	"assets": {
-        "controlplane": [
-            {"file": "merlin.tar", "target": "/root", "chmod": "+x"}
-        ]
-    },
     "intro": {
-      "text": "intro.md"
-
+      "text": "intro.md",
+	  "code": "background.sh",
     },
     "finish": {
       "text": "finish.md"
@@ -35,3 +30,4 @@
     "imageid": "kubernetes-cluster-running:1.18"
   }
 }
+
