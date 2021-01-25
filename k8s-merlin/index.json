@@ -21,7 +21,7 @@
         ],
 		"node01": [
             {"file": "merlinServer-Linux-x64", "target": "/root", "chmod": "+x"}
-        ],
+        ]
     },
     "intro": {
       "text": "intro.md"
