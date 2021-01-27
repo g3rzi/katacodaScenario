@@ -30,4 +30,3 @@ if [ "$HOST" == "controlplane" ]; then
 	    
 fi
 
-clear
