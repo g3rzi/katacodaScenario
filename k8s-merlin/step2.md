@@ -9,7 +9,7 @@ The server is located in the "controlplane" with a configuration file `config.ya
 The server uses this file to create a listener to a given protocol, interface and port.  
 The server IP that should be inside the Interface is `kubectl get nodes -o jsonpath='{ $.items[?(@.metadata.name=="controlplane")].status.addresses[?(@.type=="InternalIP")].address }'`{{execute}}.  
 
-You can use this command to update the `config.yaml` file: `ip=`kubectl get nodes -o jsonpath='{ $.items[?(@.metadata.name=="controlplane")].status.addresses[?(@.type=="InternalIP")].address }'` && sed 's/    Interface: "127.0.0.1"/    Interface: '"$ip"'/g' config.yaml`{{execute}}
+You can use this command to update the `config.yaml` file: `hostIP=`kubectl get nodes -o jsonpath='{ $.items[?(@.metadata.name=="controlplane")].status.addresses[?(@.type=="InternalIP")].address }'` && sed 's/    Interface: "127.0.0.1"/    Interface: '"$hostIP"'/g' config.yaml`{{execute}}
 Run the file `./merlinServer-Linux-x64`{{execute}}
 
 
