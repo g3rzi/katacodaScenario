@@ -3,7 +3,7 @@
 touch /root/aaaaaaaaa
 echo 
 
-cat <<EOT >> config.yaml
+echo <<EOT >> config.yaml
 
 AutoStart: true
 Listeners:
