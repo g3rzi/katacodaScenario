@@ -1,6 +1,20 @@
 #!/bin/bash
 
 touch /root/aaaaaaaaa
+echo 
+
+cat <<EOT >> config.yaml
+
+AutoStart: true
+Listeners:
+  - Name: "Default"
+    Protocol: "http2"
+    Interface: "127.0.0.1"
+    Port: "443"
+	
+EOT
+
+
 HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
 	  touch /root/thisisthehost
