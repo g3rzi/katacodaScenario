@@ -8,5 +8,5 @@ HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
 	  echo "This is the Host"
 	  ./launch.sh
-	  kubectl run priv-container --image=alpine --overrides='{"spec": {"template": {"spec": {"containers": [{"name": "priv-container", "image": "alpine", "command": ["sh", "-c", "sleep 1000"], "securityContext": {"privileged": true} }]}}}}' -- sh -c 'sleep 1000'
+	  #kubectl run priv-container --image=alpine --overrides='{"spec": {"template": {"spec": {"containers": [{"name": "priv-container", "image": "alpine", "command": ["sh", "-c", "sleep 1000"], "securityContext": {"privileged": true} }]}}}}' -- sh -c 'sleep 1000'
 fi

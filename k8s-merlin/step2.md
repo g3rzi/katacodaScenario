@@ -16,4 +16,6 @@ To view the menu, run `help`{{execute}} and to see the list of modules run `use 
 
 Let's continue and see examples.
 
+Start this vulnerable container `kubectl run priv-container --image=alpine --overrides='{"spec": {"template": {"spec": {"containers": [{"name": "priv-container", "image": "alpine", "command": ["sh", "-c", "sleep 1000"], "securityContext": {"privileged": true} }]}}}}' -- sh -c 'sleep 1000'`{{execute}}
+
 
