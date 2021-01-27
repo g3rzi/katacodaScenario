@@ -1,14 +1,10 @@
 #!/bin/bash
 
 touch /root/aaaaaaaaa
-echo 
-
-
-
 
 HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
-	  touch /root/thisisthehost
+	  echo "This is the Host"
 	  #wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinServerAndData.tar
 	  mkdir /root/merlin
 	  #tar -xf merlinServerAndData.tar --directory /root/merlin
@@ -26,6 +22,7 @@ EOT
 
 	else
       #wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64
-      echo "a"
+      echo "This is the Worker"
 fi
 
+clear
