@@ -8,6 +8,7 @@
       {
         "title": "Step 1",
         "text": "step1.md"
+
       },
       {
         "title": "Step 2",
@@ -16,7 +17,8 @@
     ],
     "intro": {
       "text": "intro.md",
-	  "code": "foreground.sh"
+	  "code": "background.sh"
+
     },
     "finish": {
       "text": "finish.md"
@@ -29,4 +31,3 @@
     "imageid": "kubernetes-cluster-running:1.18"
   }
 }
-
