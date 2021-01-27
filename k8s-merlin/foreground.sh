@@ -3,15 +3,13 @@
 touch /root/aaaaaaaaa
 echo 
 
-echo <<EOT >> config.yaml
-
+cat <<EOT >> config.yaml
 AutoStart: true
 Listeners:
   - Name: "Default"
     Protocol: "http2"
     Interface: "127.0.0.1"
     Port: "443"
-	
 EOT
 
 
