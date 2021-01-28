@@ -23,6 +23,7 @@ EOT
      ./launch.sh
 	else
       wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64
+	  chmod +x merlinAgent-Linux-x64
       echo "This is the Worker"
 fi
 
