@@ -13,7 +13,7 @@ Verify that the `config.yaml` file contains the server IP address: `cat config.y
 
 Start the server `./server`{{execute}}.    
 To view the menu, run `help`{{execute}} and to see the list of modules run `use module <TAB>`.  
-*You can use the `TAB` in any place to see the list commands.
+*You can use the `TAB` in any place to see the list commands.  
 
 Let's continue and see examples.  
 
