@@ -33,4 +33,6 @@ EOF```{{execute T3}}
 
 
 
-
+`echo T1`{{execute T1}}  
+`echo T2`{{execute T2}}  
+`echo T3`{{execute T3}}  
