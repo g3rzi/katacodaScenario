@@ -18,7 +18,7 @@ To view the menu, run `help`{{execute}} and to see the list of modules run `use 
 Let's continue and see examples.  
 
 
-`Open`{{execute T3}}  new terminal on the master and tart this vulnerable container:  
+`Open`{{execute T3}} new terminal on the master and tart this vulnerable container:  
 ```
 kubectl apply -f - <<EOF
 apiVersion: v1
@@ -33,7 +33,3 @@ spec:
 EOF```{{execute T2}}  
 
 
-
-`echo T1`{{execute T1}}  
-`echo T2`{{execute T2}}  
-`echo T3`{{execute T3}}  
