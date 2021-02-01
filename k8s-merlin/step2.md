@@ -33,3 +33,6 @@ spec:
 EOF```{{execute T2}}  
 
 
+Go to the first terminal of the master and check if a new connection was received with the message "New authenticated agent checkin..".  
+Then, run `main`{{execute T1}} and then `agent list`{{execute T1}} to see the new connection.  
+
