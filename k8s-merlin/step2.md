@@ -15,7 +15,7 @@ Start the server `./server`{{execute}}.
 To view the menu, run `help`{{execute}} and to see the list of modules run `use module <TAB>`.  
 *You can use the `TAB` in any place to see the list commands.  
 
-Let's continue and see examples.  
+Let's continue and see examples2.  
 
 Start this vulnerable container `kubectl run priv-container --image=alpine --overrides='{"spec": {"template": {"spec": {"containers": [{"name": "priv-container", "image": "alpine", "command": ["sh", "-c", "sleep infinity"], "securityContext": {"privileged": true} }]}}}}' -- sh -c 'sleep infinity'`{{execute}}
 
