@@ -18,7 +18,8 @@ To view the menu, run `help`{{execute}} and to see the list of modules run `use 
 Let's continue and see examples2.  
 
 Start this vulnerable container:  
-```kubectl apply -f - <<EOF
+```
+kubectl apply -f - <<EOF
 apiVersion: v1
 kind: Pod
 metadata:
