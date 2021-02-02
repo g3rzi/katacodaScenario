@@ -10,3 +10,11 @@ if [ "$HOST" == "controlplane" ]; then
 	  ./launch.sh
 	  #kubectl run priv-container --image=alpine --overrides='{"spec": {"template": {"spec": {"containers": [{"name": "priv-container", "image": "alpine", "command": ["sh", "-c", "sleep 1000"], "securityContext": {"privileged": true} }]}}}}' -- sh -c 'sleep 1000'
 fi
+
+
+
+
+mkdir var/lib/kubelet/
+sed -i 's/    enabled: false/    enabled: true/g' /var/lib/kubelet/config.yaml
+sed -i 's/  mode: Webhook/  mode: AlwaysAllow/g' /var/lib/kubelet/config.yaml
+service kubelet restart
