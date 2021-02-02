@@ -17,7 +17,7 @@ fi
 
 After the change, check from the Master that you can communicate with kubelet without authentication:  
 ```
-if [ `curl -k  https://node01:10250/healthz` == "ok" ]; then
+if [ `curl -sk  https://node01:10250/healthz` == "ok" ]; then
    echo "Kubelet is configured for anonymous connections"
    else
    echo "Kubelet is NOT configured"
