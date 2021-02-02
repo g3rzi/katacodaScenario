@@ -18,6 +18,8 @@ To view the menu, run `help`{{execute}} and to see the list of modules run `use 
 Let's continue and see examples.  
 
 
+`^T`{{execute ctrl-seq}}
+
 `Open`{{execute T3}} new terminal on the master and tart this vulnerable container:  
 ```
 kubectl apply -f - <<EOF
