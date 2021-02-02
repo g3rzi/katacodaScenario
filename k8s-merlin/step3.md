@@ -16,4 +16,10 @@ fi
 ```{{execute HOST2}}   
 
 After the change, check from the Master that you can communicate with kubelet without authentication:  
-`curl -k  https://node01:10250/healthz`{{execute T3}}
+```
+if [ `curl -k  https://node01:10250/healthz` == "ok" ]; then
+   echo "Kubelet is configured for anonymous connections"
+   else
+   echo "Kubelet is NOT configured"
+fi
+```{{execute T3}}
