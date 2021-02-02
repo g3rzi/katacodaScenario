@@ -16,4 +16,4 @@ fi
 ```{{execute HOST2}}   
 
 After the change, check from the Master that you can communicate with kubelet without authentication:  
-`curl -k  https://node01:10250/healthz`{{execute T1}}
+`curl -k  https://node01:10250/healthz`{{execute T2}}
