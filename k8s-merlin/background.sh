@@ -14,7 +14,4 @@ fi
 
 
 
-mkdir var/lib/kubelet/
-sed -i 's/    enabled: false/    enabled: true/g' /var/lib/kubelet/config.yaml
-sed -i 's/  mode: Webhook/  mode: AlwaysAllow/g' /var/lib/kubelet/config.yaml
-service kubelet restart
+
