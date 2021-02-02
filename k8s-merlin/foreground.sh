@@ -24,8 +24,8 @@ EOT
      ./launch.sh
 	 
 	else
-       mkdir var/lib/kubelet/
-cat <<EOT >> /lib/kubelet/config.yaml
+       mkdir /var/lib/kubelet/
+cat <<EOT >> /var/lib/kubelet/config.yaml
 apiVersion: kubelet.config.k8s.io/v1beta1
 authentication:
   anonymous:
@@ -62,8 +62,6 @@ volumeStatsAggPeriod: 0s
 EOT
       wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64
 	  chmod +x merlinAgent-Linux-x64
-	  sed -i 's/    enabled: false/    enabled: true/g' /var/lib/kubelet/config.yaml
-      sed -i 's/  mode: Webhook/  mode: AlwaysAllow/g' /var/lib/kubelet/config.yaml
 	  service kubelet restart
       echo "This is the Worker"
 fi
