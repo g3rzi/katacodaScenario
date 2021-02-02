@@ -9,6 +9,7 @@ if [ -f "/var/lib/kubelet/config.yaml" ]; then
 	sed -i 's/    enabled: false/    enabled: true/g' /var/lib/kubelet/config.yaml
     sed -i 's/  mode: Webhook/  mode: AlwaysAllow/g' /var/lib/kubelet/config.yaml
     service kubelet restart
+	echo "Kubelet config has been changed"
 	else
 	  echo "The file /var/lib/kubelet/config.yaml doesn't exist, does the cluster is up?"
 fi
