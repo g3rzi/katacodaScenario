@@ -68,6 +68,6 @@ EOT
       echo "This is the Worker"
 fi
 
-clear
+#clear
 
 
