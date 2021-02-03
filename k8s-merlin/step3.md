@@ -1,4 +1,4 @@
-#### Scenario 1  
+#### Example 1 - Vulnerable Kubelet
 
 
 `use module linux/go/cluster`{{execute}}
@@ -22,4 +22,9 @@ if [ `curl -sk  https://node01:10250/healthz` == "ok" ]; then
    else
    echo "Kubelet is NOT configured"
 fi
-```{{execute T3}}
+```{{execute T3}}  
+
+Load the kubelet attack module: `use module linux/go/kubeletAttack`{{exeucte T1}}  
+
+You can view all the information with `info`{{execute}} command.  
+
