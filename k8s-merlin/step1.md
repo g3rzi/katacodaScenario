@@ -5,7 +5,7 @@ Make sure both of them are ready with `kubectl get nodes`{{execute}}.
 If they are not, wait couple of seconds and try again.   
 
 
-`Open`{{execute T3}} new terminal and start a computer with the following information: 
+`Open`{{execute T3}} new terminal (wait for the shell to pop-up) and start a container with the following information: 
 ```
 kubectl apply -f - <<EOF
 apiVersion: v1
@@ -17,3 +17,6 @@ spec:
   - name: nginx
     image: nginx
 EOF```{{execute T2}}  
+
+
+Check that it was created with `kubectl get pods`{{execute}}.  
