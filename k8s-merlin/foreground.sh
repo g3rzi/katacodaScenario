@@ -21,7 +21,7 @@ EOT
       sed -i 's/    Interface: "127.0.0.1"/    Interface: '"$HOST_IP"'/g' config.yaml
 	  echo "HOST_IP=$HOST_IP" >> /etc/environment
 	  source /etc/environment
-     ./launch.sh
+     launch.sh
 	 
 	else
       wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64
@@ -29,6 +29,6 @@ EOT
       echo "This is the Worker"
 fi
 
-#clear
+clear
 
 
