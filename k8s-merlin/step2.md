@@ -9,9 +9,9 @@ The server is located in the `controlplane` with a configuration file `config.ya
 The server uses this file to create a listener to a given protocol, interface and port.   
 The server IP that should be inside the Interface is `echo $HOST_IP`{{execute}}.  
 
-Verify that the `config.yaml` file contains the server IP address: `cat config.yaml`{{execute}}
+Verify that the `config.yaml` file contains the server IP address: `cat config.yaml`{{execute T1}}
 
-Start the server `./merlinServer-Linux-x64`{{execute}}.    
+Start the server `./merlinServer-Linux-x64`{{execute T1}}.    
 To view the menu, run `help`{{execute}} and to see the list of modules run `use module <TAB>`.  
 *You can use the `TAB` in any place to see the list commands.  
 
