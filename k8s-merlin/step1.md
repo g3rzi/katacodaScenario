@@ -1,5 +1,5 @@
-This is a Kubernetes environment with Master ("controlplane") and Worker ("node01").
-Start the cluster by running `launch.sh`{{execute}}.  
+This is a Kubernetes environment with Master ("controlplane") and Worker ("node01").   
+The cluster should start automatically, but if not, you can start it by running `launch.sh`{{execute}}.  
 
 Make sure both of them are ready with `kubectl get nodes`{{execute}}.  
 If they are not, wait couple of seconds and try again.   
@@ -19,4 +19,4 @@ spec:
 EOF```{{execute T2}}  
 
 
-Check that it was created with `kubectl get pods`{{execute}}.  
+Check that it was created and running with `kubectl get pods`{{execute}}.  
