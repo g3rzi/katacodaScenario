@@ -18,7 +18,7 @@ To view the menu, run `help`{{execute}} and to see the list of modules run `use 
 
 #### Agent
 
-`Open`{{execute T3}} new terminal on the master and start this vulnerable container:  
+Open new terminal `echo Terminal 3`{{execute T3}} new terminal on the master and start this vulnerable container:  
 ```
 kubectl apply -f - <<EOF
 apiVersion: v1
