@@ -1,6 +1,3 @@
-#### Example 1 - Vulnerable Kubelet
-
-
 #### Prepare the enviornment
 
 

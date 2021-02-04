@@ -27,6 +27,7 @@ EOT
 	  chmod +x merlinAgent-Linux-x64
 	  
       echo "This is the Worker"
+	  touch /this_is_node01_host
 	  clear
 fi
 
