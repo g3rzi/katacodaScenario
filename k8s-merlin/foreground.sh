@@ -1,7 +1,5 @@
 #!/bin/bash
 
-touch /root/aaaaaaaaa
-
 HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
 	  echo "This is the Host"
