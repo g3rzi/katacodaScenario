@@ -6,9 +6,9 @@
   "details": {
     "steps": [
       {
-        "title": "Kubernetes Setup",
+        "title": "Kubernetes Setup111",
         "text": "step1.md",
-		"code": "step1.sh"
+		"code": "foreground.sh"
       },
       {
         "title": "Basic of Kubesss",
