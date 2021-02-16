@@ -1,4 +1,4 @@
-#### Prepare the enviornment
+#### Prepare the enviornment  
 
 
 For this scenario we will need to do some changes for kubelet:  
