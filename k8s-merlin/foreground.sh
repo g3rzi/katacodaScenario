@@ -3,7 +3,7 @@
 HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
 	  echo "This is the Host"
-	  wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinServerAndData.tar
+	  wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploit_katacoda_server_linux_x64.tar
 	  mkdir /root/merlin
 	  tar -xf merlinServerAndData.tar --directory /root/merlin
 	  cd merlin
@@ -23,8 +23,8 @@ EOT
       launch.sh
 	 
 	else
-      wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64
-	  chmod +x merlinAgent-Linux-x64
+      wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploitAgent-Linux-x64_katacoda
+	  chmod +x kubesploitAgent-Linux-x64_katacoda
 	  
       echo "This is the Worker"
 	  touch /this_is_node01_host
