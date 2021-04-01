@@ -3,10 +3,6 @@ Here we will see the basic settings of Kubesploit.
 ## Basics of Kubesploit
 
 <p align="left">
-  <img src="https://github.com/cyberark/kubesploit/blob/assets/1.5x/kubesploit@1.5x-100.jpg?raw=true" height="30%" width="30%">
-</p>
-
-<p align="left">
   <img src="https://github.com/cyberark/kubesploit/blob/assets/1.5x/kubesploit@1.5x-100.jpg?raw=true">
 </p>
 
