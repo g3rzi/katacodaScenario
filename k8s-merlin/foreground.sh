@@ -4,9 +4,9 @@ HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
 	  echo "This is the Host"
 	  wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploit_katacoda_server_linux_x64.tar
-	  mkdir /root/merlin
-	  tar -xf merlinServerAndData.tar --directory /root/merlin
-	  cd merlin
+	  mkdir /root/kubesploit
+	  tar -xf kubesploit_katacoda_server_linux_x64.tar --directory /root/kubesploit
+	  cd kubesploit
 	  cat <<EOT >> config.yaml
 AutoStart: true
 Listeners:
