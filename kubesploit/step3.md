@@ -28,7 +28,9 @@ fi
 Load the kubelet attack module from terminal 1 by running `use module linux/go/kubeletAttack`{{execute T1}}.  
 
 You can view all the information with `info`{{execute T1}} command.  
-We will first set the module to run on all the agents with this command `set Agent all`{{execute T1}}.   
+The module is set automatically to run on all the agents with this command, if it wasn't set it is possible by running `set Agent all`{{execute T1}}.   
+We need to set the IP of the target machine, let's find the IP by running `ip addr show ens3  | awk '$1 == "inet" { print $2 }' | cut -d/ -f1`{{execute T3}} in `node1`.  
+Now, take this IP address and type in the server `set Url <IP>`, and replace `<IP>` with the IP address we received.  
 
 The default command will run list the pods through kubelet, simply execute it with `run`{{execute T1}} and wait for the output.  
 
