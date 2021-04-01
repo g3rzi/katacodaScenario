@@ -1,16 +1,16 @@
 {
-  "title": "Kubernetes with Merlin",
+  "title": "Kubernetes with Kubesploit",
   "description": "kubernetes",
   "difficulty": "Beginner",
   "time": "60",
   "details": {
     "steps": [
       {
-        "title": "Kubernetes Setup111",
+        "title": "Kubernetes Setup",
         "text": "step1.md"
       },
       {
-        "title": "Basic of Kubesss",
+        "title": "Basic of Kubesploit",
         "text": "step2.md"
       },
 	  {
