@@ -2,7 +2,7 @@
 
 #### Load the mount container breakout module and run it
 
-Load the module from terminal 1 by running `use module linux/go/mountContainerBreakout`{{execute T1}}.  
+Load the module from terminal 1 by going back to the `main`{{execute T1}} and then run `use module linux/go/mountContainerBreakout`{{execute T1}}.  
 You can view all the information with `info`{{execute T1}} command.  
 Set the module to run on all the agents with this command `set Agent all`{{execute T1}}.   
 
