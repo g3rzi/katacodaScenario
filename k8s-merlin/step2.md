@@ -1,6 +1,6 @@
-Here we will see the basic settings of Kubessss.
+Here we will see the basic settings of Kubesploit.
 
-## Basics of Kubessss
+## Basics of Kubesploit
 
 #### Server
 
