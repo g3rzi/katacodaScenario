@@ -3,18 +3,10 @@
 HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
 	  echo "This is the Host"
-	  wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploit_katacoda_server_linux_x64.tar
+      wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploit_katacoda_server_linux_x64.tar
 	  mkdir /root/kubesploit
 	  tar -xf kubesploit_katacoda_server_linux_x64.tar --directory /root/kubesploit
 	  cd kubesploit
-	  cat <<EOT >> config.yaml
-AutoStart: true
-Listeners:
-  - Name: "Default"
-    Protocol: "http2"
-    Interface: "127.0.0.1"
-    Port: "443"
-EOT
 	  export HOST_IP=`ip addr show ens3  | awk '$1 == "inet" { print $2 }' | cut -d/ -f1`
       sed -i 's/    Interface: "127.0.0.1"/    Interface: '"$HOST_IP"'/g' config.yaml
 	  echo "HOST_IP=$HOST_IP" >> /etc/environment
