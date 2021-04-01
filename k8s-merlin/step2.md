@@ -6,6 +6,11 @@ Here we will see the basic settings of Kubesploit.
   <img src="https://github.com/cyberark/kubesploit/blob/assets/1.5x/kubesploit@1.5x-100.jpg?raw=true" height="30%" width="30%">
 </p>
 
+<p align="left">
+  <img src="https://github.com/cyberark/kubesploit/blob/assets/1.5x/kubesploit@1.5x-100.jpg?raw=true">
+</p>
+
+
 Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments.  
 More information can be found here:  
 https://github.com/cyberark/kubesploit  
