@@ -4,7 +4,7 @@
 
 Load the module from terminal 1 by going back to the `main`{{execute T1}} and then run `use module linux/go/mountContainerBreakout`{{execute T1}}.  
 You can view all the information with `info`{{execute T1}} command.  
-Set the module to run on all the agents with this command `set Agent all`{{execute T1}}.   
+Notice that it will run on all the agents.  
 
 Execute it with `run`{{execute T1}} and wait for the output.  
 
