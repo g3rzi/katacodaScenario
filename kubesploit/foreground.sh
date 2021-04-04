@@ -3,7 +3,7 @@
 HOST=`hostname`
 if [ "$HOST" == "controlplane" ]; then
 	  echo "This is the Host"
-      wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploit_katacoda_server_linux_x64.tar
+      wget https://github.com/cyberark/kubesploit/releases/download/v0.1.1/kubesploit_katacoda_server_linux_x64.tar
 	  mkdir /root/kubesploit
 	  tar -xf kubesploit_katacoda_server_linux_x64.tar --directory /root/kubesploit
 	  cd kubesploit
@@ -15,7 +15,7 @@ if [ "$HOST" == "controlplane" ]; then
       launch.sh
 	 
 	else
-      wget https://github.com/cyberark/kubesploit/releases/download/v0.1.0/kubesploitAgent-Linux-x64_katacoda
+      wget https://github.com/cyberark/kubesploit/releases/download/v0.1.1/kubesploitAgent-Linux-x64_katacoda
 	  chmod +x kubesploitAgent-Linux-x64_katacoda
 	  
       echo "This is the Worker"
