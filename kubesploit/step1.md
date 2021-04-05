@@ -2,7 +2,7 @@ This is a Kubernetes environment with Master ("controlplane") and Worker ("node0
 The cluster should start automatically, but if not, you can start it by running `launch.sh`{{execute}}.  
 
 Make sure both of them are ready with `kubectl get nodes`{{execute}}.  
-If they are not, wait couple of seconds and try again.   
+If they are not, wait a couple of seconds and try again.   
 
 
 `Open`{{execute T3}} new terminal (wait for the shell to pop-up) and start a container with the following information: 

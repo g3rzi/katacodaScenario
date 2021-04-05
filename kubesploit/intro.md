@@ -3,4 +3,4 @@
 </p>
 
 In this scenario, you will learn how to work with [Kubesploit](https://github.com/cyberark/kubesploit), a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments.  
-We created an Kubernetes environment for you to play with Kubesploit. Let's start!  
+We created a Kubernetes environment for you to play with Kubesploit. Let's start!  
