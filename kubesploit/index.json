@@ -1,6 +1,6 @@
 {
   "title": "Kubernetes with Kubesploit ",
-  "icoin": "https://github.com/g3rzi/katacodaScenario/blob/main/kubesploit/kubesploit_transparent.ico",
+  "icon": "https://github.com/g3rzi/katacodaScenario/blob/main/kubesploit/kubesploit_transparent.ico",
   "description": "kubernetes",
   "difficulty": "Beginner",
   "time": "60",
